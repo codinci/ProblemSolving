@@ -1,0 +1,1 @@
+SELECT i.name AS InstituitionName, c.name AS CourseName, count(studentid) AS NumberofStudents FROM instituition i LEFT JOIN course c ON i.instituitionid =c.instituition LEFT JOIN student s ON c.courseid = s.course GROUP BY i.name
